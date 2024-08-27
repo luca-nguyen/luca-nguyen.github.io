@@ -1,0 +1,399 @@
+* {
+  font-family: "DM Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* First section: Introduction */
+.introduction {
+  /* background-color: lightblue; */
+  border: 3px solid black;
+  border-radius: 35px;
+  width: 1200px;
+  height: 600px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #212529;
+  position: relative;
+}
+
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+h1 {
+  font-size: 98px;
+}
+
+.intro-code {
+  padding: 15px 15px;
+}
+
+.code-text {
+  font-family: "Source Code Pro";
+}
+
+.introduction-start {
+  font-size: 20px;
+}
+
+.introduction-end {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.tech-stack {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -100px;
+  stroke: rgb(0, 0, 0);
+  transition: ease 0.3s;
+}
+.arrow:hover {
+  translate: 0px -5px;
+  cursor: pointer;
+}
+
+/* Section 2: Details */
+
+.details {
+  /* background-color: lightblue; */
+  width: 800px;
+  height: 600px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 35px;
+}
+
+h2 {
+  font-size: 86px;
+}
+
+.call-download {
+  margin-bottom: 45px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn--resume {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px 25px;
+  border-radius: 25px;
+  border: none;
+  /* background-image: linear-gradient(to top left, #e52a5a, #ff585f); */
+  background-color: #e52a5a;
+  transition: ease 0.3s;
+  text-decoration: none;
+}
+
+.btn--resume:hover {
+  background-color: #bd244a;
+}
+
+.resume-text {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.download-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: #ffdadc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.3s;
+}
+
+.btn--resume:hover .download-container {
+  background-color: #fff3f3;
+}
+
+.download {
+  stroke: #3e0c19;
+  height: 25px;
+  width: 25px;
+}
+
+.social {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 25px;
+}
+
+.btn-linkedin {
+  /* background-image: linear-gradient(to top left, #293d8c, #8aa2ff); */
+  background-color: #4a63c6;
+  transition: ease 0.3s;
+}
+
+.btn-linkedin:hover {
+  background-color: #394d9a;
+}
+
+.btn-linkedin p {
+  color: white;
+}
+
+.btn-github {
+  /* background-image: linear-gradient(to top left, #2c2c2c, #acacac); */
+  background-color: #2c2c2c;
+  transition: ease 0.3s;
+}
+
+.btn-github:hover {
+  background-color: #1b1b1b;
+}
+
+.btn-github p {
+  color: white;
+}
+
+.padding {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  margin-bottom: 500px;
+}
+
+/* Third Section: Projects */
+
+.projects {
+  /* background-color: lightblue; */
+  border: 3px solid black;
+  border-radius: 35px;
+  width: 1400px;
+  height: 1fr;
+
+  margin: 100px auto;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  color: #212529;
+  position: relative;
+  column-gap: 20px;
+  padding: 0px 40px;
+}
+
+.projects-heading {
+  grid-column: 1 / -1;
+  margin: 50px auto;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.2);
+  height: 500px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+
+/* Footer */
+footer {
+  font-size: 20px;
+}
+.name {
+  font-family: "Source Code Pro";
+  padding: 50px 5px;
+}
+
+
+/* Scroll Reveal */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+
+/* Media Queries */
+@media (max-width: 91em) {
+  .projects {
+    width: 1000px;
+    height: 1fr;
+
+    margin: 100px auto;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    color: #212529;
+    position: relative;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    padding: 0px 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 82em) {
+  .introduction {
+    /* background-color: red; */
+    width: 800px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 69em) {
+  .projects {
+    width: 800px;
+  }
+}
+
+@media (max-width: 52em) {
+  .introduction {
+    /* background-color: red; */
+    width: 600px;
+    height: 600px;
+  }
+  .introduction-end {
+    padding: 0px 50px;
+    text-align: center;
+  }
+  .tech-stack {
+    margin-bottom: 20px;
+  }
+
+  .details {
+    width: 600px;
+    height: 600px;
+  }
+
+  .projects {
+    width: 600px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 41em) {
+  .introduction {
+    /* background-color: red; */
+    width: 400px;
+    height: 600px;
+  }
+
+  .details {
+    width: 400px;
+    height: 600px;
+  }
+  .social {
+    width: 80px;
+    height: 100px;
+  }
+  .buttons {
+    gap: 10px;
+  }
+
+  .projects {
+    width: 400px;
+    grid-template-columns: 1fr;
+  }
+  .projects-heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 25em) {
+  .introduction {
+    /* background-color: red; */
+    width: 350px;
+    height: 600px;
+  }
+
+  .details {
+    width: 350px;
+    height: 600px;
+  }
+  .social {
+    width: 70px;
+    height: 100px;
+  }
+  .buttons {
+    gap: 10px;
+  }
+
+  .projects {
+    width: 350px;
+    grid-template-columns: 1fr;
+  }
+  .project {
+    width: 85%;
+    height: 400px;
+    margin: 0px auto;
+  }
+  .projects-heading {
+    text-align: center;
+    margin: 50px auto;
+  }
+  .projects-heading h2 {
+    font-size: 75px;
+  }
+  footer {
+    font-size: 16px;
+  }
+}
