@@ -12,7 +12,7 @@
   border-radius: 35px;
   width: 1200px;
   height: 600px;
-  margin: 50px auto;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,7 +222,7 @@ a {
   width: 1400px;
   height: 1fr;
 
-  margin: 100px auto;
+  margin: 20px auto;
   display: grid;
   grid-template-rows: auto 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -333,6 +333,7 @@ footer {
 @media (max-width: 41em) {
   .introduction {
     /* background-color: red; */
+    margin: 30px auto;
     width: 400px;
     height: 600px;
   }
@@ -361,6 +362,47 @@ footer {
 @media (max-width: 25em) {
   .introduction {
     /* background-color: red; */
+    margin: 30px auto;
+    width: 350px;
+    height: 600px;
+  }
+
+  .details {
+    width: 350px;
+    height: 600px;
+  }
+  .social {
+    width: 70px;
+    height: 100px;
+  }
+  .buttons {
+    gap: 10px;
+  }
+
+  .projects {
+    width: 350px;
+    grid-template-columns: 1fr;
+  }
+  .project {
+    width: 85%;
+    height: 400px;
+    margin: 0px auto;
+  }
+  .projects-heading {
+    text-align: center;
+    margin: 50px auto;
+  }
+  .projects-heading h2 {
+    font-size: 75px;
+  }
+  footer {
+    font-size: 16px;
+  }
+}
+@media (max-width: 24.6em) {
+  .introduction {
+    /* background-color: red; */
+    margin: 30px auto;
     width: 350px;
     height: 600px;
   }
