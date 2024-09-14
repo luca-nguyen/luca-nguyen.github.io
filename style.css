@@ -337,9 +337,11 @@ footer {
     margin: 30px auto;
     width: 400px;
     height: 600px;
+    margin-bottom: 100px;
   }
 
   .details {
+    
     width: 400px;
     height: 600px;
   }
